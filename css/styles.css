@@ -2,13 +2,40 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: font-family: 'Fredoka', sans-serif;;
+
 }
 
-h2 {
+h1 {
   text-align: center;
   margin-top: 2rem;
+  color: rgb(188, 16, 85);
+  
 }
 
+h3,
+h4 {
+  color: aliceblue;
+
+}
+
+h4 {
+    font-weight: lighter;
+}
+
+a {
+    color: rgb(5, 162, 183)
+
+}
+
+img {
+  height: 100px;
+}
+
+.container {
+
+    padding: 90px;
+}
 .small-container {
   text-align: center;
   padding: 1rem;
@@ -20,10 +47,6 @@ h2 {
   padding: 1rem;
 }
 
-.structures {
-  display: inline-block;
-}
-
 .floating {
   float: left;
 }
@@ -32,7 +55,20 @@ h2 {
   float: right;
 }
 
-.clearfix ::after {
+.clearfix::after {
   clear: both;
-  content: "yo";
+  content: "";
+  display: table;
+}
+
+.card {
+  background-color: black;
+  float: left;
+  width: calc(100% / 3 - 40px);
+  margin: 20px;
+}
+
+.description {
+  display: inline-block;
+  text-align: left;
 }
